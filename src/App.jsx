@@ -1,14 +1,18 @@
 import Playlist from "./components/Playlist";
 import Player from "./components/Player";
 import PlayerPanel from "./layouts/Player/PlayerPanel";
+import { useEffect } from "react";
 
 function App() {
+
+  const playlist = useSelector(state => state.playlist);
+
   return (
     <>
       <div className="min-h-screen bg-slate-800 pt-20 px-4">
         <div className="max-w-xl mx-auto">
           <Player />
-          <h1 className="text-slate-100 text-2xl">PlayerMania - Your 5 songs</h1>
+          <h1 className="text-slate-100 text-2xl">PlayerMania - Your {playlist.songs.length} songs</h1>
           <Playlist />
         </div>
       </div>

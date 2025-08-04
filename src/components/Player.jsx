@@ -35,7 +35,7 @@ export default function Player() {
     //controls
     id="audio-player"
     ref={audioRef}
-    src={process.env.PUBLIC_URL + playlist.songs?.find(obj => obj.id === playlist.currentMusicID).url}
+    src={playlist.songs?.find(obj => obj.id === playlist.currentMusicID).url}
     onLoadedData={handleLoadedData}
     onTimeUpdate={handleTimeUpdate}
     ></audio>

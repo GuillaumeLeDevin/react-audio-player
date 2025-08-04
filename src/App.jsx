@@ -1,7 +1,7 @@
 import Playlist from "./components/Playlist";
 import Player from "./components/Player";
 import PlayerPanel from "./layouts/Player/PlayerPanel";
-import { useEffect } from "react";
+import { useSelector } from "react";
 
 function App() {
 

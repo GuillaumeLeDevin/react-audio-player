@@ -1,7 +1,7 @@
 import Playlist from "./components/Playlist";
 import Player from "./components/Player";
 import PlayerPanel from "./layouts/Player/PlayerPanel";
-import { useSelector } from "react";
+import { useSelector } from "react-redux";
 
 function App() {
 

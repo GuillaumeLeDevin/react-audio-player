@@ -32,7 +32,7 @@ export const playlist = createSlice({
 
 export function getMusicsData(action) {
     return function(dispatch, getState){
-        fetch("/data/playlist.json")
+        fetch("./data/playlist.json")
         .then(data => data.json())
         .then(data => dispatch(addBaseSongs(data.playlist)))
     }
